@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>MB</title>
+	<title>Mastewal Belete</title>
+	<img rel="icon" src="favicon.png" height="72" width="72">
 </head>
 <body>
 
-<hr>
 <a href="index.html">Home</a>
 <a href="contact.html">Contact</a>
 
@@ -25,25 +25,75 @@
 <h1>Contact Us</h1>
 
 <form action="mailto:se.mastewal.belete@gmail.com" enctype="utf-8" method="POST" enctype="utf-8">
-	<label for="fname">First Name: </label>    
-	<input type="text" name="fName" id="fName" required><br>
-	    <label for="lName">Last Name: </label>    
-	    	<input type="text" name="lName" id="lName" required><br>
-	    	<label for="email">Email Add: </label>
-	    	<input type="email" name="email" id="email" required><br>
-	    	Where are you from? :
-	    	<select name="Continent" id="">
-	    		<option value="" >Africa</option>
-	    		<option value="" >Asia</option>
-	    		<option value="" >Europe</option>
+<table cellspacing="2">
 
-	    	</select>
-	    	<br>Leave Your Comment here ..<br>
-	    	<textarea name="comment" id="comment" cols="30" rows="10">
-	    		
-	    	</textarea><br><input type="submit" value="Submit">
+	<tr>
+		<th align="left">Name</th>
+		<th></th>
+	</tr>
+	
+	<tr>
+		<td><label for="fname"></label>  
+			<input type="text" name="fName" id="fName" required placeholder="First" pattern="[A-Za-z]+" title="Name should consist only letters." >
+		</td>
+		<td><label for="lName"></label> 
+			<input type="text" name="lName" id="lName" required placeholder="Last" pattern="[A-Za-z]+" title="Name should consist only letters.">
+		</td>
+	</tr>
+	
+	<tr>
+		<th align="left">Email</th>
+	</tr>
+	
+	<tr>
+		<td><label for="email"></label>
+			<input type="email" name="email" id="email" required placeholder="you@example.com">
+		</td>
+	</tr>
+	
+	<tr>
+		<th align="left">City</th>
+		<th align="left">Country</th>
+	</tr>
+	
+	<tr>
+		<td><label for="city"></label>
+			<input type="text" name="city" id="city" required placeholder="City" >
+		</td>
+		<td><label for="country"></label>
+			<input type="text" name="country" id="country" required placeholder="Country">
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left">Phone Number(Optional)</th>
+	</tr>
+	<tr>
+		<td><label for="phone"></label>
+			<input type="tel" name="phone" id="phone">
+		</td>
+	</tr>
+
+	<tr>
+		<th align="left">Commment</th>
+	</tr>
+	<tr>
+		<td> <textarea name="comment" id="comment" cols="20" rows="5"></textarea></td>
+	</tr>
+
+	
+</table>
+<input type="submit" value="Submit">
 </form>
 
+
+
+
+<label>Enter your phone number in the format (123)456-7890 
+	(<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="2"/>)-
+	 <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" size="2"/> - 
+	 <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+   </label>
 
 <footer>
 	<a href="http://www.facebook.com" target="_blank" >Facebook</a>
@@ -51,6 +101,9 @@
 	<a href="http://www.instagram.com" target="_blank" >Instagram</a>
 </footer>
 
+<input type="password" id="pwd" name="pwd"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
 
 </body>
 </html>
