@@ -31,4 +31,39 @@ body{
     color: black;
 }
 
+.row1:after{
+	content:"";
+	display: table;
+    clear: both;
+}
+.row1 .column .picture{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    margin: 1px;
+}
 
+.row2:after{
+	content:"";
+	display: table;
+    clear: both;
+}
+
+.row2 .column .picture{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    margin: 1px;
+}
+
+.row3:after{
+	content:"";
+	display: table;
+    clear: both;
+}
+.row3 .column .picture{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    margin: 1px;
+}
