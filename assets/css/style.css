@@ -33,6 +33,10 @@ body{
     color: black;
 }
 
+.nav a:active {
+    color: #d14836 !important;
+    }
+
 .row1:after{
 	content:"";
 	display: table;
