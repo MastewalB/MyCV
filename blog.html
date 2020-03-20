@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>Mastewal Belete</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
     </head>
 
     <body class="body">
@@ -22,34 +22,49 @@
         <div id="content">
             <section>
                 <p class="title">
-                    My First Post
+                    <h3>Interpretation and Effects of the 200px width in default 16px browser</h3>
                 </p>
                 <article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-
+                    <p>
+                        As we can see from its unit, the value 200px has a fixed (absolute) value of 200 unit screen pixels to take place for whatever the object/element it is assigned for. It would have an effect if we had used relative measuring units such as percents(%), REMs and EMs. For example, if we use 200% for the font-size attribute of a text, we will get a 32px (2 times of the default 16px value) since we are referring with respect to the root width.
+                    </p>
+                    <p>
+                        <h5>Here is sample of Unit Conversions in HTML </h5>
+                        <ul> 
+                            <li>10px = 0.625rem</li>
+                            <li>12px = 0.75rem</li>
+                            <li>14px = 0.875rem</li>
+                            <li>16px = 1rem(default)</li>
+                            <li>24px = 1.5rem</li>
+                            <li>32px = 2rem</li>
+                        </ul>
+                    </p>
+                    <p>In Conclusion, since it is absolute unit measurement, px doesn't consider any relative values of elements around the element.</p>
                 </article>
                 <p class="date">
-                    March 20/2020
+                    March 19/2020
                 </p>
             </section>
 
 
             <section>
                 <p class="title">
-                    My Second Post
+                    <h3>Comparision between %, em and rem in unit Measurement</h3>
                 </p>
                 <article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
+                    <p>When compared to pixels(px) and points(pts) the percent(%), Ems, and REM(Root element) are relative and they fix themselves according to the enviroment around them. </p>
+                    <h5>Ems and REMs </h5>
+                    <p>These units differ only by the element whom they're pointing as frame of reference. The Em takes the direct parent and the REM takes the root element. Each has its own advantage and disadvantage in my point of view.</p>
+                    <p>These units differ only by the element whom they're pointing as frame of reference. The Em takes the direct parent and the REM takes the root element. Each has its own advantage and disadvantage in my point of view.</p>
+
+                    <p>The Em is best to write less nested content. Such as body > section > article. Because we don't have much task to calculate each value of attribute for each element (for example font ) relative to their parent.</p>
+                    <p>In cases where there is a lot of nested content, such as lists, in my opinion, it's better to use REM. Because we only have to refer the root value and fix our attributes to it. Note that we can change the root value.</p>
+                    
+                    <h5>The % over the EMs</h5>
+                    <p>In normal conditions, such as when the font-size of a text is medium, there is no difference in effects of % and the ems. But when we set such attributes to the extremes, such as Smallest and Largest, that's the point problems start to appear. </p>
+                    <p>When the base unit is 1em, if the user customizes the font on their browser to Smallest, the text goes extremely(abnormaly) miniature and becomes difficult to read. But if base unit is 100%, the text will just shrink normally.</p>
+                    <p>This is the main point of difference among people, Some defend that the Em is still performing what it's intended to do, and acting normally. But in my opinion again, the percent is best to support better user customizations and Configurations.</p>
+
 
                 </article>
                 <p class="date">
@@ -62,12 +77,6 @@
                     My Third Post
                 </p>
                 <article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id pariatur esse. Quae sint voluptate modi facilis accusantium possimus, in adipisci voluptas nulla consectetur.</p> 
 
                 </article>
                 <p class="date">
