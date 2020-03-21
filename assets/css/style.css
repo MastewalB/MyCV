@@ -53,6 +53,13 @@ body{
 nav{
     background-color: skyblue;
 }
+@media (hover:hover){
+    nav{
+
+        font-size: smaller;
+        transition: 1s;
+    }
+}
 .title{
     font-size: 23px;
     font-weight: bold;

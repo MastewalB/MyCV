@@ -1,6 +1,7 @@
 body{
     font-family: DejaVu Sans Condensed;
-    background-color: rgb(176, 219, 236);
+    background-color: rgb(216, 234, 241);
+    background-image: linear-gradient(to right, rgb(216, 234, 241), white);
     
 }
 
@@ -34,13 +35,30 @@ body{
 
 section{
     /* border: solid 1px; */
-    margin-top: 100px;
-    padding: 5px 30px;
+    padding: 5%;
+    float: left;
+    width: 40%;
     
 }
 article{
     text-align: justify;
     line-height: 20px;
     font-size: 20px;
+}
+h3{
+    font-style: normal;
+    font-size: 2rem;
+    border-bottom: 2px rgb(173, 157, 157) solid;
+    
+}
+h3:hover{
+    text-shadow: 1px 1px;
+}
+h5{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+h5:hover{
+    
 }
 
